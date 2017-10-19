@@ -1,0 +1,173 @@
+html,body {
+  padding:0;
+  margin:0;
+  background:#fafafa;
+  text-align:center;
+}
+
+.credit {
+
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  font-weight: bold;
+  font-size: 11px;
+
+}
+
+a {
+
+  color: #666;
+  text-decoration: none;
+
+}
+
+a:hover {
+
+  text-decoration: underline;
+
+}
+
+.property_field_dob {
+
+  margin:0;
+  padding: 5px 15px;
+  font-size: 32px;
+
+}
+
+button {
+
+  margin: 25px 0;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 6px;
+  font-size: 32px;
+
+  color:#eee;
+  background:#333;
+
+}
+
+button:hover {
+
+  cursor: pointer;
+  background-color: #666;
+  color: white;
+
+}
+
+.tab-wrapper {
+
+  margin: 250px auto;
+  max-width: 50%;
+
+}
+
+.tab-wrapper .heading {
+
+  font-size: 24px;
+
+}
+
+.tab-wrapper .tagline {
+
+  font-size: 26px;
+
+}
+
+.tab-wrapper .fact {
+
+  font-size: 11px;
+  font-weight: 100;
+
+}
+
+.tab-wrapper .fact a {
+
+  font-weight: bold;
+
+}
+
+.tab-wrapper .fact span {
+
+  font-weight: bold;
+
+}
+
+.tab-section {
+
+  display: none;
+
+}
+
+.tab-section-active {
+
+  display: block;
+
+}
+
+.clock {
+  position:relative;
+  font-family:monaco,consolas,"courier new",monospace;
+  font-size:3.5rem;
+  line-height:1.375;
+}
+
+.clock:before {
+  left:2.325em;
+}
+
+.clock:after {
+  right:2.325em;
+}
+
+.clock span {
+  position:relative;
+  display:inline-block;
+  padding:0 .25em;
+  margin:0 .06125em;
+  z-index:1;
+}
+
+.clock span:first-child {
+  margin-left:0;
+}
+
+.clock span:last-child {
+  margin-right:0;
+}
+
+.clock span.break {
+  margin-right:.3em;
+}
+
+.clock span:before,
+.clock span:after {
+  position:absolute;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  color:#eee;
+  text-shadow:0 1px 0 #fff;
+  background:#333;
+  border-radius:.125em;
+  outline:1px solid transparent; /* fix jagged edges in ff */
+}
+
+.clock span:before {
+  opacity:1;
+  z-index:1;
+  content:attr(data-old);
+
+  -webkit-transform-origin:0 0;
+  -moz-transform-origin:0 0;
+  -ms-transform-origin:0 0;
+  transform-origin:0 0;
+
+  -webkit-transform:translate3d(0,0,0) rotateX(0);
+  -moz-transform:translate3d(0,0,0) rotateX(0);
+  -ms-transform:translate3d(0,0,0) rotateX(0);
+  transform:translate3d(0,0,0) rotateX(0);
+}
