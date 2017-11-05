@@ -121,7 +121,10 @@ button:hover {
 
 .tab-section-active {
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
 }
 
