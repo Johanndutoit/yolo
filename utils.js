@@ -116,7 +116,8 @@ var getSection = function() {
 * the rest are hidden, really simple method to just hide/show content
 * for now.
 **/
-var showSection = function(sectionClass, target) {
+/* Edited to ulitize the class system for better looks */
+var showSection = function (sectionClass, target) {
 
   // set the current
   currentSection = target;
@@ -125,17 +126,17 @@ var showSection = function(sectionClass, target) {
   var els = document.getElementsByClassName(sectionClass);
 
   // loop all matching elements
-  for(var i = 0; i < els.length; i++) {
+  for (var i = 0; i < els.length; i++) {
 
-    if(els[i].getAttribute('data-section') == target) {
+    if (els[i].getAttribute('data-section') == target) {
 
       // show
-      els[i].style.display = 'block';
+      els[i].classList.add('tab-section-active');
 
     } else {
 
       // hide
-      els[i].style.display = 'none';
+      els[i].classList.remove('tab-section-active');
 
     }
 
