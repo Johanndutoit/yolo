@@ -1,8 +1,10 @@
-html,body {
-  padding:0;
-  margin:0;
-  background:#fafafa;
-  text-align:center;
+html, body {
+  
+  padding: 0;
+  margin: 0;
+  background: #FAFAFA;
+  text-align: center;
+  
 }
 
 .credit {
@@ -10,9 +12,17 @@ html,body {
   position: absolute;
   right: 5%;
   bottom: 5%;
-  font-weight: bold;
-  font-size: 11px;
+  font-size: 0.9em;
+  font-style: italic;
 
+}
+
+.credit a {
+  
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  
 }
 
 a {
@@ -30,22 +40,22 @@ a:hover {
 
 .property_field_dob {
 
-  margin:0;
-  padding: 5px 15px;
-  font-size: 32px;
+  margin: 0;
+  padding: 0.16em 0.5em;
+  font-size: 3.5em;
 
 }
 
 button {
 
-  margin: 25px 0;
-  padding: 10px 15px;
+  margin: 1em 0;
+  padding: 0.33em 0.5em;
   border: 0;
   border-radius: 6px;
-  font-size: 32px;
+  font-size: 3em;
 
-  color:#eee;
-  background:#333;
+  color: #EEE;
+  background: #333;
 
 }
 
@@ -59,28 +69,36 @@ button:hover {
 
 .tab-wrapper {
 
-  margin: 250px auto;
   max-width: 50%;
 
 }
 
 .tab-wrapper .heading {
 
-  font-size: 24px;
+  font-size: 3em;
+  margin: 1em 0; 
 
 }
 
 .tab-wrapper .tagline {
 
-  font-size: 26px;
+  font-size: 2.5em;
+  margin: 1em 0;
 
 }
 
 .tab-wrapper .fact {
 
-  font-size: 11px;
+  font-size: 1.05em;
   font-weight: 100;
+  font-style: italic;
 
+}
+
+.tab-wrapper .fact * {
+  
+  font-style: normal;
+  
 }
 
 .tab-wrapper .fact a {
@@ -103,71 +121,92 @@ button:hover {
 
 .tab-section-active {
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
 }
 
 .clock {
-  position:relative;
-  font-family:monaco,consolas,"courier new",monospace;
-  font-size:3.5rem;
-  line-height:1.375;
+  
+  position: relative;
+  font-family: "Monaco", "Consolas", "Courier New", monospace;
+  font-size: 5rem;
+  line-height: 1.375;
+  
 }
 
-.clock:before {
-  left:2.325em;
+/*.clock:before {
+  
+  left: 2.325em;
+
 }
 
 .clock:after {
-  right:2.325em;
-}
+  
+  right: 2.325em;
+  
+}*/ /* will this break the layout? seems to bring no change about with `flex` */
 
 .clock span {
-  position:relative;
-  display:inline-block;
-  padding:0 .25em;
-  margin:0 .06125em;
-  z-index:1;
+  
+  position: relative;
+  display: inline-block;
+  padding: 0 0.25em;
+  margin: 0 0.06125em;
+  z-index: 1;
+  
 }
 
 .clock span:first-child {
-  margin-left:0;
+  
+  margin-left: 0;
+  
 }
 
 .clock span:last-child {
-  margin-right:0;
+  
+  margin-right: 0;
+  
 }
 
 .clock span.break {
-  margin-right:.3em;
+  
+  margin-right: 0.3em;
+  
 }
 
 .clock span:before,
 .clock span:after {
-  position:absolute;
-  left:0;
-  top:0;
-  right:0;
-  bottom:0;
-  color:#eee;
-  text-shadow:0 1px 0 #fff;
-  background:#333;
-  border-radius:.125em;
-  outline:1px solid transparent; /* fix jagged edges in ff */
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #EEE;
+  text-shadow: 0 1px 0 white;
+  background: #333;
+  border-radius: 0.125em;
+  outline: 1px solid transparent; /* fix jagged edges in ff */
+  
 }
 
 .clock span:before {
-  opacity:1;
-  z-index:1;
-  content:attr(data-old);
+  
+  opacity: 1;
+  z-index: 1;
+  content: attr(data-old);
 
-  -webkit-transform-origin:0 0;
-  -moz-transform-origin:0 0;
-  -ms-transform-origin:0 0;
-  transform-origin:0 0;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin:    0 0;
+  -ms-transform-origin:     0 0;
+  transform-origin:         0 0;
 
-  -webkit-transform:translate3d(0,0,0) rotateX(0);
-  -moz-transform:translate3d(0,0,0) rotateX(0);
-  -ms-transform:translate3d(0,0,0) rotateX(0);
-  transform:translate3d(0,0,0) rotateX(0);
+  -webkit-transform:  translate3d(0, 0, 0) rotateX(0);
+  -moz-transform:     translate3d(0, 0, 0) rotateX(0);
+  -ms-transform:      translate3d(0, 0, 0) rotateX(0);
+  transform:          translate3d(0, 0, 0) rotateX(0);
+  
 }
