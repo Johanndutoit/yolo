@@ -65,7 +65,7 @@ var render = function(params) {
       if(timer) clearTimeout(timer);
 
       // get the days
-      var days    = daysBetweenDates(new Date(), new Date(sections[0], sections[1], sections[2]));
+      var days    = daysBetweenDates(new Date(), new Date(parseInt(sections[0]), parseInt(sections[1])-1, parseInt(sections[2])));
       var rdays   = Math.floor(days);
       var fdays   = rdays.toLocaleString(
         undefined, // use a string like 'en-US' to override browser locale
